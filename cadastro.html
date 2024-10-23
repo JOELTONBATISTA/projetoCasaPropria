@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de cadastro</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="shortcut icon" href="IMAGENS/inconemylogo.jpg" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+</head>
+<body>
+  
+    <div class="container">
+       
+        <h4>REGISTRE UMA CONTA</h4>
+        <p id="ocultaAlert" class="ocultaAlert">Cadastro Realizado com sucesso..</p>
+        <form action="" method="post">
+     <fieldset>
+      
+
+       <div class="box"><div class="icones"><span class="material-symbols-outlined">
+        person
+        </span></div><input type="text" id="Nome"  min="5" placeholder="Nome completo" required></div> 
+
+       <div class="box"><div class="icones"><span class="material-symbols-outlined">
+        mail
+        </span></div><input type="email" id="Email" placeholder="Email" required></div> 
+
+       <div class="box"><div class="icones"><span class="material-symbols-outlined">
+        lock
+        </span></div><input type="password" id="passUm" class="ipts" placeholder="Senha" required><span class="material-symbols-outlined versenha">
+            visibility_off
+            </span></div> 
+
+       <div class="box"><div class="icones"><span class="material-symbols-outlined">
+        lock_clock
+        </span></div><input type="password" name="" id="passDois" class="ipts" placeholder="Confirme a senha" required></div> 
+
+       <div class="box"><div class="icones"><span class="material-symbols-outlined">
+        call
+        </span></div><input type="number" id="Fone" min="0" placeholder="Telefone" ></div>
+
+        <div class="box"><button id="btcad">REGISTRAR</button></div>
+
+        <div class="box">
+            <a id="links" href="login.html" style="margin-top: 20px;font-size: 15px;text-decoration: none;"><p id="naocadastrado">Já pssui cadastro?</p></a>      
+      </div> 
+     </fieldset>
+        </form>
+        
+    <!--https://formspree.io/f/xrgjkpvk-->
+ 
+    <script src="JS/maincadastro.js"></script>
+    <script src="JS/mainregistrar.js"></script>
+
+</body>
+</html>

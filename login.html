@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de login</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="shortcut icon" href="IMAGENS/inconemylogo.jpg" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+</head>
+
+<body id="bodylogin">
+    <div class="container">
+        <h4>LOGIN</h4>
+        <p id="ocultaAlert" class="ocultaAlert">Cadastro Realizado com sucesso..</p>
+        <form action="" method="post">
+     <fieldset>
+      
+
+        
+      
+
+       <div class="box"><div class="icones"><span class="material-symbols-outlined">
+        mail
+        </span></div><input type="email" placeholder="Email" id="Email" required></div> 
+
+       <div class="box"><div class="icones"><span class="material-symbols-outlined">
+        lock
+        </span></div><input type="password" placeholder="Senha" id="ipts" class="ipts" required><span class="material-symbols-outlined versenha">
+            visibility_off
+            </span></div> 
+ 
+
+   
+
+        <div class="box"><button id="btcad">ENTRAR</button></div>
+        
+        <div class="box">
+              <a id="links" href="cadastro.html" style="margin-top: 20px;font-size: 15px;text-decoration: none;"><p id="naocadastrado">Não é cadastrado?</p></a>      
+        </div> 
+        
+     </fieldset>
+        </form>
+        
+    <!--https://formspree.io/f/xrgjkpvk-->
+    <script defer>
+      function verificaToken(){
+            const token = localStorage.getItem('Token');
+            if(token){
+                setTimeout(()=>{
+                   window.location.href='GALERIA/galeria.html'        
+                },3000)
+              
+            }
+        }verificaToken()
+   
+    </script>
+ 
+    <script src="JS/mainlogin.js"></script>
+    <script src="./JS/verificauser.js"></script>
+</body>
+</html>

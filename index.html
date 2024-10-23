@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            width: 100%;
+            height:auto;
+            padding: 34px;
+            background-color: rgb(221, 220, 218);
+        }
+        .container p{
+            background-color: aliceblue;
+            border: 2px solid #ccc;
+            padding: 34px;
+            display: block;
+        }
+        @media (max-width:384px){
+           .container p{
+            background-color: aliceblue;
+            border: 2px solid #ccc;
+            padding: 34px;
+            display: block;
+            font-size: 10px;
+        } 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="paragf">
+
+        </p>
+    </div>
+    <script defer>
+
+        window.addEventListener('load',()=>{
+          window.location.href='login.html'  
+        })()
+
+
+    </script>
+
+
+
+    <script>
+        function PegaDados(){
+const verdadosLocal = localStorage.getItem('Lista');
+const dados = JSON.parse(verdadosLocal);
+let vd = dados
+console.log(dados)
+
+dados.forEach(element => {
+  console.log(element[0].nome);
+   paragf.innerHTML+='Nome: '+element[0].nome +'  '+ 'Email: '+ ' '+element[0].email +'  ' +'Senha: ' +' ' +element[0].senha +'<br>'
+   });
+}
+
+window.addEventListener('load',()=>{
+   PegaDados()
+   
+})
+    </script>
+</body>
+</html>
